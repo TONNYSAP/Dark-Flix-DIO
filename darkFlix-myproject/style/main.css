@@ -1,0 +1,142 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* elementos base*/
+body {
+    background: var(--preto);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+header .logo {
+    color: var(--vermelho);
+    font-size: xx-large;
+}
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    transition: .2s;
+}
+header nav a:hover {
+    color: #fff;
+}
+/* filme principal */
+.filme-principal {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('http://3.bp.blogspot.com/_1oiczSBcSZ0/TRnqe154OAI/AAAAAAAAAww/9KybSB3vZl8/s1600/Floresta%2BNegra.jpg') no-repeat;
+    width: 100%;
+    
+    background-size: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 90px;
+}
+.titulo {
+    font-size: 50px;
+    margin-top: 15%;
+}
+.botao1, .botao2 {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+.botao1:hover {
+    background-color: rgba(248, 46, 46, 0.5);
+    
+    border: 0px solid #AAA;
+}
+.botao2:hover {
+    background-color: rgba(46, 49, 248, 0.5);
+    
+    border: 0px solid #AAA;
+}
+.botao i {
+    margin-right: 5px;
+}
+.container {
+    margin-left: 20px;
+}
+main .container {
+    margin-bottom: 15px;
+}
+.input-search {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+main #search {
+    background-color: var(--preto);
+    width: 50%;
+    height: 40px;
+    margin-left: auto;
+       
+
+    border: 1px solid #AAA;
+    border-radius: 5px;
+    text-align: center;
+}
+.search { 
+       
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* formatação do elemento */
+#lupa{
+    float:left;
+    margin:3px 0px 0px -20px;
+    cursor:pointer
+ }
+ 
+ /* formatação do conteúdo  */
+ #lupa:after{
+    font-family:FontAwesome;
+    font-size:14px;
+    content:"\f002"
+ }
+.filme-principal .container {
+    width: 70%;
+}
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrosel-filmes {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.footer {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.footer .logo {
+    color: var(--vermelho);
+}
